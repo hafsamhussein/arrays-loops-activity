@@ -60,6 +60,22 @@ console.log('Teal count:', tealCount);
  * 4. Output the original array, odd number array and even number array
  */
 
+let numbers = [1, 2, 3, 4, 5];
+let oddNumbers = [];
+let evenNumbers = [];
+
+for (let i = 0; i < numbers.length; i++) {
+  if (numbers[i] % 2 === 0) {
+    evenNumbers.push(numbers[i]);
+  } else {
+    oddNumbers.push(numbers[i]);
+  }
+}
+
+console.log("Original Array:", numbers);
+console.log("Odd Numbers Array:", oddNumbers);
+console.log("Even Numbers Array:", evenNumbers);
+
 
 // Example output
 // 3, 7, 2, 8, 11, 4, 2
